@@ -19,7 +19,7 @@ def get_db():
         db.close()
 
 
-app = FastAPI()
+app = FastAPI(title="TodoApp", version='1.0.0')
 
 origins = [
     "http://localhost:3000",
